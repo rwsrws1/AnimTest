@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.MyLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:id="@+id/my_layout">
+
+        <include layout="@layout/top_bar"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv1"
+            android:text="Animation"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv2"
+            android:text="ObjectAnimator"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv3"
+            android:text="Share"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:transitionName="tran_1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv4"
+            android:text="TextView4"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv5"
+            android:text="TextView5"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv6"
+            android:text="TextView6"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/text_tv7"
+            android:text="TextView7"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/bt_add_news"
+            android:text="ADD NEWS"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_news"/>
+
+</com.example.myapplication.MyLayout>

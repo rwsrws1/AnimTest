@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutAnimation="@anim/layout_anim"
+    tools:context=".MainActivity">
+
+   <com.example.myapplication.TopLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/top_view"
+       app:layout_constraintTop_toTopOf="parent"
+
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"/>
+
+   <com.example.myapplication.MiddleView
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:id="@+id/progress_bar"
+       app:progressTextSize="20sp"
+       app:progressTextColor="#ff7788"
+       app:innerBackground="#ee9933"
+       app:outerBackground="#229933"
+       app:roundWidth="10dp"
+       app:layout_constraintTop_toBottomOf="@id/top_view"
+       app:layout_constraintBottom_toTopOf="@id/test_btn"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/test_btn"
+       android:text="valueAnimator"
+       android:lines="1"
+       android:textAllCaps="false"
+       android:background="@color/black"
+       android:textColor="@color/white"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.MyLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_layout"
+    tools:context=".MainActivity3">
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv3"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"
+      android:transitionName="tran_1"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv4"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv5"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv6"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv7"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv8"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv9"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv10"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv11"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv12"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv13"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv14"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  </com.example.myapplication.MyLayout>
