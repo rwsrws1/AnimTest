@@ -104,4 +104,132 @@
       android:background="@color/teal_700"
       android:textColor="@color/white"/>
 
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv15"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv16"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv17"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv18"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv19"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv20"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv21"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv22"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv23"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv24"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv25"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv26"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv27"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv28"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv29"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:id="@+id/text_tv30"
+      android:text="Share"
+      android:background="@color/teal_700"
+      android:textColor="@color/white" />
+
   </com.example.myapplication.MyLayout>

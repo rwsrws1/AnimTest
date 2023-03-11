@@ -31,6 +31,11 @@ class RvAdapter(var mList: MutableList<News>) : RecyclerView.Adapter<RvAdapter.V
 
     fun addItem(news: News) {
         mList.add(news)
-        notifyItemInserted(mList.size + 1)
+        notifyItemInserted(mList.size)
+    }
+
+    fun deleteItem(position: Int) {
+        mList.removeAt(position)
+        notifyItemRemoved(position)
     }
 }

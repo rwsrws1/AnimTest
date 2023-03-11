@@ -52,6 +52,22 @@ class MainActivity : AppCompatActivity(), TopLayout.HeadListener {
                 startTest()
             }
         }
+        btn_activity4.setOnClickListener {
+            val intent = Intent(this, MainActivity4::class.java)
+            startActivity(intent)
+        }
+        btn_activity5.setOnClickListener {
+            val intent = Intent(this, MainActivity5::class.java)
+            startActivity(intent)
+        }
+        btn_activity6.setOnClickListener {
+            val intent = Intent(this, MainActivity6::class.java)
+            startActivity(intent)
+        }
+        btn_activity7.setOnClickListener {
+            val intent = Intent(this, MainActivity7::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun startTest() {

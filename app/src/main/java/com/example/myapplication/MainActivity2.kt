@@ -33,7 +33,6 @@ class MainActivity2 : AppCompatActivity(), TopLayout.HeadListener{
         setContentView(R.layout.activity_main2)
         tranView = findViewById(R.id.text_tv3)
         initAnimation()
-        initRecyclerView()
         setOnclick()
         text_tv1.startAnimation(animationSet)
     }
@@ -90,24 +89,6 @@ class MainActivity2 : AppCompatActivity(), TopLayout.HeadListener{
         val animatorSet = AnimatorSet()
         animatorSet.play(objectAnimator2).with(objectAnimator)
         animatorSet.start()
-    }
-
-    private fun initRecyclerView() {
-        recyclerView = findViewById(R.id.rv_news)
-        recyclerView?.layoutManager = LinearLayoutManager(this)
-        newsList = ArrayList()
-        for(i in 0 .. 20){
-            var name = "新闻+${i}"
-            var details = "内容是我是第${i}条新闻"
-            var news = News(0, name, details)
-            newsList.add(news)
-        }
-        var adapter = RvAdapter(newsList)
-        recyclerView?.adapter = adapter
-        bt_add_news.setOnClickListener {
-            Toast.makeText(this, "YOU ADD NEWS", Toast.LENGTH_SHORT).show()
-            adapter.addItem(News(0, "新增新闻", "新闻内容"))
-        }
     }
 
     override fun onclick() {

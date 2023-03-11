@@ -141,7 +141,7 @@ class MiddleView(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
         val x = width/2 - textBounds.width()/2
         val fontMetrics = textPaint.fontMetricsInt
         val dy = (fontMetrics.bottom - fontMetrics.top)/2 - fontMetrics.bottom
-        val baseLineY = height/2 + dy
+        val baseLineY = measuredHeight/2 + dy
         canvas?.drawText(text, x.toFloat(), baseLineY.toFloat(), textPaint)
     }
 
