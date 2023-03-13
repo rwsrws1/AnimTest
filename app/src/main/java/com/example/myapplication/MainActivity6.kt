@@ -3,6 +3,7 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,8 +15,14 @@ class MainActivity6 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d(TAG, "MainActivity6 onCreate")
         setContentView(R.layout.activity_main6)
         initRecyclerView()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "MainActivity6 onResume")
     }
 
     companion object {
@@ -38,10 +45,10 @@ class MainActivity6 : AppCompatActivity() {
         bt_add_news.setOnClickListener {
             Toast.makeText(this, "YOU ADD NEWS", Toast.LENGTH_SHORT).show()
             adapter.addItem(News(0, "新增新闻", "新闻内容"))
-            recyclerView?.smoothScrollToPosition(newsList.size - 1)
+            recyclerView?.smoothScrollToPosition(recyclerView?.adapter?.itemCount?.minus(1) ?: 0)
         }
         bt_delete_news.setOnClickListener {
-            adapter.deleteItem(newsList.size - 1)
+            adapter.deleteItem(recyclerView?.adapter?.itemCount?.minus(1) ?: 0)
         }
         bt_top_news.setOnClickListener {
             recyclerView?.scrollToPosition(0)
