@@ -17,7 +17,7 @@ class LineView @JvmOverloads constructor(context: Context?, attrs: AttributeSet?
 
     init {
         defaultPaint.style = Paint.Style.STROKE
-            defaultPaint.strokeWidth = 5f
+            defaultPaint.strokeWidth = 10f
             defaultPaint.color = Color.RED
         }
 
