@@ -53,5 +53,7 @@ class MainActivity6 : AppCompatActivity() {
         bt_top_news.setOnClickListener {
             recyclerView?.scrollToPosition(0)
         }
+        val decoration = CardItemDecoration()
+        recyclerView?.addItemDecoration(decoration)
     }
 }
