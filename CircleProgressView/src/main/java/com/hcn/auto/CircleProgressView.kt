@@ -15,7 +15,7 @@ class CircleProgressView @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAttr) {
     private var mCircleColor = Color.argb(0x80, 0x92, 0x94, 0x95)
     private var mRIngColor = Color.argb(0xff, 0xff, 0xe0, 0x16)
-    private var mRadius = 103F
+    private var mRadius = 103
     private var mRingRadius = 103F
     private var mStrokeWidth = 3F
     private var mProgress = 0F
@@ -27,11 +27,12 @@ class CircleProgressView @JvmOverloads constructor(
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView)
         mCircleColor = typedArray.getColor(R.styleable.CircleProgressView_mCircleColor, mCircleColor)
         mRIngColor = typedArray.getColor(R.styleable.CircleProgressView_mRingColor, mRIngColor)
-        mRadius = typedArray.getDimension(R.styleable.CircleProgressView_mRadius, mRadius)
+        mRadius = typedArray.getDimension(R.styleable.CircleProgressView_mRadius, mRadius.toFloat()).toInt()
         mRingRadius = typedArray.getDimension(R.styleable.CircleProgressView_mRingRadius, mRingRadius)
         mStrokeWidth = typedArray.getDimension(R.styleable.CircleProgressView_mStrokeWidth, mStrokeWidth)
         mProgress = typedArray.getDimension(R.styleable.CircleProgressView_mProgress, mProgress)
         mTotalProgress = typedArray.getDimension(R.styleable.CircleProgressView_mTotalProgress, mTotalProgress)
+        typedArray.recycle()
 
         mCirclePaint.apply {
             isAntiAlias = true
@@ -51,7 +52,7 @@ class CircleProgressView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         val mXCenter = width/2F
         val mYCenter = height/2F
-        canvas.drawCircle(mXCenter, mYCenter, mRadius, mCirclePaint)
+        canvas.drawCircle(mXCenter, mYCenter, mRadius.toFloat(), mCirclePaint)
 
         if (mProgress > 0) {
             val oval = RectF()
