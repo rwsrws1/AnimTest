@@ -3,11 +3,11 @@
     <declare-styleable name='CircleProgressView'>
         <attr name="mCircleColor" format="color"/>
         <attr name="mRingColor" format="color"/>
-        <attr name="mRadius" format="float"/>
-        <attr name="mRingRadius" format="float"/>
-        <attr name="mStrokeWidth" format="float"/>
-        <attr name="mProgress" format="float"/>
-        <attr name="mTotalProgress" format="float"/>
+        <attr name="mRadius" format="dimension"/>
+        <attr name="mRingRadius" format="dimension"/>
+        <attr name="mStrokeWidth" format="dimension"/>
+        <attr name="mProgress" format="dimension"/>
+        <attr name="mTotalProgress" format="dimension"/>
     </declare-styleable>
 
 </resources>
