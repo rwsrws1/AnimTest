@@ -27,11 +27,11 @@ class CircleProgressView @JvmOverloads constructor(
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView)
         mCircleColor = typedArray.getColor(R.styleable.CircleProgressView_mCircleColor, mCircleColor)
         mRIngColor = typedArray.getColor(R.styleable.CircleProgressView_mRingColor, mRIngColor)
-        mRadius = typedArray.getDimension(R.styleable.CircleProgressView_mRadius, mRadius)
-        mRingRadius = typedArray.getDimension(R.styleable.CircleProgressView_mRingRadius, mRingRadius)
-        mStrokeWidth = typedArray.getDimension(R.styleable.CircleProgressView_mStrokeWidth, mStrokeWidth)
-        mProgress = typedArray.getDimension(R.styleable.CircleProgressView_mProgress, mProgress)
-        mTotalProgress = typedArray.getDimension(R.styleable.CircleProgressView_mTotalProgress, mTotalProgress)
+        mRadius = typedArray.getFloat(R.styleable.CircleProgressView_mRadius, mRadius)
+        mRingRadius = typedArray.getFloat(R.styleable.CircleProgressView_mRingRadius, mRingRadius)
+        mStrokeWidth = typedArray.getFloat(R.styleable.CircleProgressView_mStrokeWidth, mStrokeWidth)
+        mProgress = typedArray.getFloat(R.styleable.CircleProgressView_mProgress, mProgress)
+        mTotalProgress = typedArray.getFloat(R.styleable.CircleProgressView_mTotalProgress, mTotalProgress)
 
         mCirclePaint.apply {
             isAntiAlias = true
