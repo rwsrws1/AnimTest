@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.util.AttributeSet
+import android.util.Log
 import android.util.TypedValue
 import android.view.View
 
@@ -22,7 +23,12 @@ class CircleProgressView @JvmOverloads constructor(
     private val mCirclePaint = Paint()
     private val mRingPaint = Paint()
 
+    companion object {
+        private val TAG = CircleProgressView::class.java.simpleName
+    }
+
     init {
+        Log.d(TAG, "CircleProgressView init")
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressView)
         mCircleColor = typedArray.getColor(R.styleable.CircleProgressView_circle_color, mCircleColor)
         mRIngColor = typedArray.getColor(R.styleable.CircleProgressView_ring_color, mRIngColor)
