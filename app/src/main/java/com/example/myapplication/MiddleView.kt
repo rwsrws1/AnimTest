@@ -7,8 +7,9 @@ import android.util.Log
 import android.util.TypedValue
 import android.view.View
 
-class MiddleView(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
-    View(context, attrs, defStyleAttr) {
+class MiddleView @JvmOverloads constructor(
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
     private var innerBackground = Color.RED
     private var outerBackground = Color.GREEN
     private var progressTextColor = Color.GREEN
@@ -31,54 +32,30 @@ class MiddleView(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
 
     init {
         Log.d(TAG, "init")
-        val typedArray = context?.obtainStyledAttributes(attrs, R.styleable.ProgressBar)
-        if (typedArray != null) {
-            innerBackground =
-                typedArray.getColor(R.styleable.ProgressBar_innerBackground, innerBackground)
-            outerBackground =
-                typedArray.getColor(R.styleable.ProgressBar_outerBackground, outerBackground)
-            progressTextColor =
-                typedArray.getColor(R.styleable.ProgressBar_progressTextColor, progressTextColor)
-            roundWidth =
-                typedArray.getDimension(R.styleable.ProgressBar_roundWidth, dip2px(roundWidth))
-                    .toInt()
-            progressTextSize = typedArray.getDimension(
-                R.styleable.ProgressBar_progressTextSize,
-                sp2px(progressTextSize)
-            ).toInt()
-        }
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ProgressBar)
+        innerBackground =
+            typedArray.getColor(R.styleable.ProgressBar_innerBackground, innerBackground)
+        outerBackground =
+            typedArray.getColor(R.styleable.ProgressBar_outerBackground, outerBackground)
+        progressTextColor =
+            typedArray.getColor(R.styleable.ProgressBar_progressTextColor, progressTextColor)
+        roundWidth =
+            typedArray.getDimension(R.styleable.ProgressBar_roundWidth, dip2px(roundWidth))
+                .toInt()
+        progressTextSize = typedArray.getDimension(
+            R.styleable.ProgressBar_progressTextSize,
+            sp2px(progressTextSize)
+        ).toInt()
         initData()
-        typedArray?.recycle()
+        typedArray.recycle()
     }
 
-    constructor(context: Context?) : this(context, null, 0) {
-        Log.d(TAG, "constructor 1")
-    }
-
-    constructor(context: Context?, attributeSet: AttributeSet) : this(context, attributeSet, 0) {
-        Log.d(TAG, "constructor 2")
-    }
-
-//    constructor(context: Context?) : super(context) {
+//    constructor(context: Context?) : this(context, null, 0) {
 //        Log.d(TAG, "constructor 1")
 //    }
 //
 //    constructor(context: Context?, attributeSet: AttributeSet) : this(context, attributeSet, 0) {
 //        Log.d(TAG, "constructor 2")
-//    }
-//
-//    constructor(context: Context?, attributeSet: AttributeSet, defStyle: Int) : super(context, attributeSet, defStyle) {
-//        Log.d(TAG, "constructor 3")
-//        val typedArray = context?.obtainStyledAttributes(attributeSet, R.styleable.ProgressBar)
-//        if (typedArray != null) {
-//            innerBackground = typedArray.getColor(R.styleable.ProgressBar_innerBackground, innerBackground)
-//            outerBackground = typedArray.getColor(R.styleable.ProgressBar_outerBackground, outerBackground)
-//            progressTextColor = typedArray.getColor(R.styleable.ProgressBar_progressTextColor, progressTextColor)
-//            roundWidth = typedArray.getDimension(R.styleable.ProgressBar_roundWidth, dip2px(roundWidth)).toInt()
-//            progressTextSize = typedArray.getDimension(R.styleable.ProgressBar_progressTextSize, sp2px(progressTextSize)).toInt()
-//        }
-//        initData()
-//        typedArray?.recycle()
 //    }
 
     private fun initData() {

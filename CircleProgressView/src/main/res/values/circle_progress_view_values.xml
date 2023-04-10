@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name='CircleProgressView'>
-        <attr name="mCircleColor" format="color"/>
-        <attr name="mRingColor" format="color"/>
-        <attr name="mRadius" format="dimension"/>
-        <attr name="mRingRadius" format="dimension"/>
-        <attr name="mStrokeWidth" format="dimension"/>
-        <attr name="mProgress" format="dimension"/>
-        <attr name="mTotalProgress" format="dimension"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="ring_color" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="ring_radius" format="dimension"/>
+        <attr name="stroke_width" format="dimension"/>
     </declare-styleable>
 
 </resources>
