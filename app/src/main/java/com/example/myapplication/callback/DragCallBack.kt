@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.callback
 
 import android.annotation.SuppressLint
 import android.graphics.drawable.RippleDrawable
@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.adapter.RvAdapter2
+import com.example.myapplication.data.Card
 import java.util.*
 
 class DragCallBack(var mAdapter: RvAdapter2, var mData: MutableList<Card>) : ItemTouchHelper.Callback() {

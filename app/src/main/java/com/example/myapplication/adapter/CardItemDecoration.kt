@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.adapter
 
 import android.graphics.Canvas
 import android.graphics.Color

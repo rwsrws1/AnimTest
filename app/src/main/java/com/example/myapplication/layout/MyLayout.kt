@@ -1,9 +1,8 @@
-package com.example.myapplication
+package com.example.myapplication.layout
 
 import android.content.Context
 import android.util.AttributeSet
 import android.util.Log
-import android.view.MotionEvent
 import android.view.ViewGroup
 
 class MyLayout : ViewGroup {

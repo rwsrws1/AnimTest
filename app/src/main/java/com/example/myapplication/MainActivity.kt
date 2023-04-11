@@ -5,14 +5,16 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.app.ActivityOptions
 import android.content.Intent
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.transition.Fade
 import android.transition.Slide
 import android.util.Log
-import android.view.Window
 import android.widget.Button
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.myapplication.fragment.MyFragment
+import com.example.myapplication.layout.TopLayout
+import com.example.myapplication.view.MiddleView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.top_bar.*
 import kotlin.concurrent.thread
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity(), TopLayout.HeadListener {
         initView()
         initData()
         setOnclick()
+        initFragment()
     }
 
     private fun initView() {
@@ -68,6 +71,16 @@ class MainActivity : AppCompatActivity(), TopLayout.HeadListener {
             val intent = Intent(this, MainActivity7::class.java)
             startActivity(intent)
         }
+        btn_activity8.setOnClickListener {
+            val intent = Intent(this, MainActivity8::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun initFragment() {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.add(MyFragment(), null)
+        fragmentTransaction.commit()
     }
 
     private fun startTest() {

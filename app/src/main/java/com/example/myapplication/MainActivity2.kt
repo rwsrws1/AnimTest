@@ -8,15 +8,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Explode
-import android.transition.Fade
 import android.transition.Slide
 import android.util.Pair
 import android.view.animation.*
 import android.widget.TextView
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.myapplication.data.News
+import com.example.myapplication.layout.TopLayout
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.top_bar.*
 

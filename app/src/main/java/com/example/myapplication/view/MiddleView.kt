@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.content.Context
 import android.graphics.*
@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.util.Log
 import android.util.TypedValue
 import android.view.View
+import com.example.myapplication.R
 
 class MiddleView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

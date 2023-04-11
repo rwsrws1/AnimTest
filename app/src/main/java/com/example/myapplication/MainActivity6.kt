@@ -3,10 +3,12 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.adapter.CardItemDecoration
+import com.example.myapplication.adapter.RvAdapter
+import com.example.myapplication.data.News
 import kotlinx.android.synthetic.main.activity_main6.*
 
 class MainActivity6 : AppCompatActivity() {

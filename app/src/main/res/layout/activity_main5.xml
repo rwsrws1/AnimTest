@@ -33,12 +33,12 @@
 
     </RelativeLayout>
 
-    <com.example.myapplication.MySurfaceView
+    <com.example.myapplication.view.MySurfaceView
         android:id="@+id/surfaceView"
         android:layout_marginTop="55dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </com.example.myapplication.MySurfaceView>
+    </com.example.myapplication.view.MySurfaceView>
 
 </RelativeLayout>

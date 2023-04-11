@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.view
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
@@ -15,6 +15,9 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.data.News
+import com.example.myapplication.R
+import com.example.myapplication.adapter.RvAdapter
 import kotlinx.android.synthetic.main.pull_to_refresh.view.*
 
 class RefreshableView @JvmOverloads constructor(

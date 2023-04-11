@@ -7,4 +7,22 @@
     <string name="updated_at">上次更新于%1$s前</string>
     <string name="updated_just_now">刚刚更新</string>
     <string name="time_error">时间有问题</string>
+    <string name="title_activity_main8">MainActivity8</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="set_process">Set Process</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+    <string name="fourth">Fourth</string>
+    <string name="fifth">Fifth</string>
+    <string name="sixth">Sixth</string>
+    <string name="seventh">Seventh</string>
 </resources>

@@ -1,13 +1,13 @@
-package com.example.myapplication
+package com.example.myapplication.adapter
 
 import android.content.Context
 import android.util.TypedValue
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.data.Card
 import com.example.myapplication.databinding.Item2Binding
 
 class RvAdapter2(private var list: MutableList<Card>) : RecyclerView.Adapter<RvAdapter2.ViewHolder>() {

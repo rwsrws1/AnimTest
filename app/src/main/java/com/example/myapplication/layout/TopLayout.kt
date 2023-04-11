@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.layout
 
 import android.app.Activity
 import android.content.Context
@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.top_bar.view.*
 
 class TopLayout(context: Context?, attrs: AttributeSet?) : LinearLayout(context, attrs) {

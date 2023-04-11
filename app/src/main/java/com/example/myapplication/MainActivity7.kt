@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.adapter.RvAdapter2
+import com.example.myapplication.callback.DragCallBack
+import com.example.myapplication.data.Card
 import com.example.myapplication.databinding.ActivityMain7Binding
 
 class MainActivity7 : AppCompatActivity() {

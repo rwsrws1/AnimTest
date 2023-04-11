@@ -3,6 +3,8 @@ package com.example.myapplication
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.adapter.AnimationController
+import com.example.myapplication.layout.MyLayout
 
 
 class MainActivity3 : AppCompatActivity() {
