@@ -22,10 +22,10 @@ class MainActivity10 : AppCompatActivity() {
             BlankFragment2(),
             BlankFragment3()
         )
+        val adapter = FragAdapter(this, fragmentList)
+        binding.viewPager2.adapter = adapter
         TabLayoutMediator(binding.tabLayout, binding.viewPager2) { tab, position ->
             tab.text = "Tab ${position + 1}"
         }.attach()
-        val adapter = FragAdapter(this, fragmentList)
-        binding.viewPager2.adapter = adapter
     }
 }
