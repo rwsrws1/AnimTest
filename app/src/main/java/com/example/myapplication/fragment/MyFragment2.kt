@@ -5,11 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentMyBinding
+import com.example.myapplication.databinding.FragmentMy2Binding
 
-class MyFragment : Fragment() {
-    private var _binding: FragmentMyBinding? = null
+class MyFragment2 : Fragment() {
+    private var _binding: FragmentMy2Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,11 +16,11 @@ class MyFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentMyBinding.inflate(inflater, container, false)
+        _binding = FragmentMy2Binding.inflate(inflater, container, false)
         return binding.root
     }
 
-override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         parentFragmentManager.setFragmentResultListener("requestKey", viewLifecycleOwner) { _, bundle ->
             val result = bundle.getString("bundleKey")

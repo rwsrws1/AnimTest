@@ -75,6 +75,14 @@ class MainActivity : AppCompatActivity(), TopLayout.HeadListener {
             val intent = Intent(this, MainActivity8::class.java)
             startActivity(intent)
         }
+        btn_activity9.setOnClickListener {
+            val intent = Intent(this, MainActivity9::class.java)
+            startActivity(intent)
+        }
+        btn_activity10.setOnClickListener {
+            val intent = Intent(this, MainActivity10::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun initFragment() {
