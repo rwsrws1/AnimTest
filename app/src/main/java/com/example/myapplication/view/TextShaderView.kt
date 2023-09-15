@@ -35,5 +35,6 @@ class TextShaderView@JvmOverloads constructor(
         canvas.drawColor(Color.parseColor("#232423"))
         paint.alpha = 255
         canvas.drawText("演示文字", 200F, 500F, paint)
+        canvas.drawRect(0F, 600F, 1000F, 1000F, paint)
     }
 }

@@ -22,7 +22,7 @@ class ImageShaderView@JvmOverloads constructor(
     init {
         paint.isAntiAlias = true
         paint.style = Paint.Style.STROKE
-        paint.strokeWidth = 30f
+        paint.strokeWidth = 100f
         paint.strokeCap = Paint.Cap.ROUND
         bitmap = BitmapFactory.decodeResource(resources, R.drawable.shader)
         val shader = BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.REPEAT)
